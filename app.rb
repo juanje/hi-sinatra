@@ -1,5 +1,7 @@
-require 'sinatra'
+require 'sinatra/base'
 
-get '/' do
-  "Hello world, it's #{Time.now} at the server!"
+class App < Sinatra::Base
+  get '/' do
+    'Hello World!'
+  end
 end
